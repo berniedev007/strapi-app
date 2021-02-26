@@ -11,6 +11,9 @@
     "comment": ""
   },
   "attributes": {
+    "owner": {
+      "model": "user"
+    },
     "title": {
       "type": "string",
       "min": 3,
