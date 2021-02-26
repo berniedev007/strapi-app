@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "restaurants",
+  "info": {
+    "name": "restaurant"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true,
+    "increments": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "min": 3,
+      "max": 99,
+      "unique": true
+    },
+    "description": {
+      "default": "My description",
+      "type": "text",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}
